@@ -1,0 +1,13 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Project template",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": "Aghata Oliveira",
+  "private": true,
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

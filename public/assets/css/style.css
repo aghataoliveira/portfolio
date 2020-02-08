@@ -1,0 +1,90 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-image: url("/assets/images/cor3.jpg");
+    background-repeat: repeat;
+    background-size: 1980px 1080px;
+    font-family: 'Josefin Sans', sans-serif;
+} 
+header{
+    /* text-align: center; */
+    display: grid;
+    margin: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+img{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo{
+
+}
+
+.menu{
+    color: #5C013B;
+    font: lighter 20px/30px Tahoma, serif;
+    /* font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.projects{
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+}
+
+.projItem{
+    flex-grow: 2fr 2fr 2fr;
+
+}
+
+.mePhoto{
+    margin: 20px auto;
+}
+
+ /*img:hover{
+    transform: rotate(20deg); */
+
+.sectionTitle{
+    color: #61acba;
+    font-size: 50px;
+    background-color: #f4dcb99a;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.textAbout{
+    color: #5C013B;
+    font-size: 25px;
+    background-color: #f4dcb98a;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact{
+    color: #5C013B;
+    font-size: 20px;
+    /* background-color: #f4dcb99a; */
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* h1:hover{
+    color: rgb(89, 94, 86);
+    font-size: 60px;
+    background-color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transform: rotate(60deg);
+} */
