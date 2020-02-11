@@ -5,35 +5,41 @@ body {
     background-repeat: repeat;
     background-size: 1980px 1080px;
     font-family: 'Josefin Sans', sans-serif;
-} 
-header{
+}
+
+header {
     /* text-align: center; */
     display: grid;
-    margin: 20px;
+    margin-top: 20px;
 }
 
-.menu{
-    margin: 35px;
-}
-.burguerMenu{
+.burguerMenu {
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
 }
 
-.name{
-    color: #5C013B;
+.name {
+    color: rgb(255, 255, 255);
     font-size: 50px;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
 }
-.social{
+
+.title {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+}
+
+.social {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    margin: 25px;    
+    margin: 25px;
 }
+
 .social a {
     height: 37px;
     line-height: 37px;
@@ -42,66 +48,73 @@ header{
     border-radius: 18.5px;
     margin: 5px;
 }
+
 .social a {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 li {
     list-style-type: none;
 }
-.icon{
-    fill:#5C013B;
+
+.icon {
+    fill: #5C013B;
 }
 
-img{
+img {
     max-width: 100%;
     margin: 0 auto;
 }
-.logo img{
+
+.logo img {
     display: flex;
-    margin-top: 5%;
+    margin-top: 50px;
 }
-.menu{
+
+.menu {
     color: #5C013B;
     font: lighter 20px/30px Tahoma, serif;
     /* font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.projects{
+.projects {
     display: grid;
-    grid-gap: 2px;
+    grid-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-area: wrap;
 }
 
-.projItem{
-    flex-grow: 2fr 2fr 2fr;
+.projItem :hover{
+    transform: scale(1.5);
+    overflow: hidden;
 }
 
-.mePhoto{
+.mePhoto {
     display: flex;
     margin: 20px auto;
 }
 
- /* img:hover{
-    transform: rotate(20deg); */
 
-.sectionTitle{
+.sectionTitle {
     color: #61acba;
     font-size: 50px;
     background-color: #f4dcb99a;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
+    margin: 20px 0;
+    padding: 10px 0;
 }
-.textAbout{
+
+.textAbout {
     color: #5C013B;
     font-size: 25px;
     /* background-color: #f4dcb98a; */
@@ -110,9 +123,16 @@ img{
     margin: 25px;
 }
 
-.contact{
+.contact {
     color: #5C013B;
     font-size: 20px;
+    /* background-color: #f4dcb99a; */
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.contactMe{
+    color: #fff;
+    font-size: 25px;
     /* background-color: #f4dcb99a; */
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
@@ -128,62 +148,100 @@ img{
     transform: rotate(60deg);
 } */
 
-.burguerMenu{
-    position:fixed;
+.burguerMenu {
+    display: none;
+    position: fixed;
     top: 0;
     left: 0;
 }
 
 .sticky-header {
+    color: #5C013B;
     position: fixed;
-    text-align:center;
-    top: 0;
+    text-align: center;
+    top: 0px;
     left: 0;
     width: 100%;
-    background-color:#61adbaa2;
+    background-color: #61adbaa2;
     height: 45px;
-    padding: 15px 0;
-  }
-  .sticky-header .container {
+    padding: 10px 0;
+}
+
+.sticky-header .container {
     display: flex;
     align-items: center;
-  }
-  /* main nav layout */
-  .sticky-header__main-nav {
-    flex:1;
+}
+
+/* main nav layout */
+.sticky-header__main-nav {
+    flex: 1;
     align-items: center;
-  }
-  .sticky-header__main-nav li {
-    display:  inline-block;
+}
+
+.sticky-header__main-nav li {
+    display: inline-block;
     position: block;
     /* background-color: #61acbaa2; */
-    padding: 0 10px;
-  }
-  
-  /* main nav modules */
-  .sticky-header__main-nav a {
+    padding: 0 15px;
+}
+
+/* main nav modules */
+.sticky-header__main-nav a {
+    text-decoration: none;
     font-size: 20px;
     color: #fff;
     flex-direction: row;
     text-align: center;
-    line-height: 49px;
-  }
-  
+    line-height: 40px;
+}
 
-  /* -----  STATES States -------------------------------------------------- */
-  /* display burguer Menu */
-  /* .burguerMenu{
-    display:block;
-  } */
-/* 
-  .burguerMenu a:hover {
-    display: flex;
-  }
-   */
-  /* Main nav states */
-  .sticky-header__main-nav a:hover {
-    color: #000;
-  }
-  .sticky-header__main-nav a:active{
+.sticky-header__main-nav a:hover {
+    text-decoration: none;
+    color: #5C013B;
+}
+
+.sticky-header__main-nav a:active {
     color: #61acba;
-  }
+}
+
+
+@media only screen and (max-width: 650px){
+    .burguerMenu{
+        display:block;
+      }
+      .burguerMenu a:hover {
+        display: flex;
+      }
+      .sticky-header__main-nav a:hover {
+        color: #5C013B;
+      }
+      .sticky-header__main-nav a:active{
+        color: #61adbaa2;
+      }
+      .sticky-header{
+        display:none;
+      }
+      .sticky-header .container {
+        display: flex;
+        align-items: center;
+      }
+      /* main nav layout */
+      .sticky-header__main-nav {
+        flex:1;
+      }
+      .sticky-header__main-nav li {
+        display: grid;
+        position:sticky;
+        align-items: center;
+        background-color: #61adbaa2;
+      }
+      
+      /* main nav modules */
+      .sticky-header__main-nav a {
+        font-size: 20px;
+        color: #fff;
+        flex-direction: column;
+        text-align: center;
+        line-height: 49px;
+      }
+}

@@ -1,18 +1,3 @@
-// borderBlur active
-var borderBlur = document.querySelectorAll("input[type=text], input[type=tel], input[type=email], textarea");
-borderBlur.forEach(function(field){
-  field.addEventListener("focus",function(){
-    this.classList.add ("borderBlur");
-  });
-});
-
-// remove borderBlur
-var borderBlur = document.querySelectorAll("input[type=text], input[type=tel], input[type=email], textarea");
-borderBlur.forEach(function(field){
-  field.addEventListener("blur",function(){
-    this.classList.remove ("borderBlur");
-  });
-});
 // Menu
 // Show sticky header on click
 var burguerMenu = document.getElementsByClassName("burguerMenu")[0];
