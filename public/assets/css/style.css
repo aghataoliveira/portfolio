@@ -7,7 +7,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-header {
+.homePage{
     /* text-align: center; */
     display: grid;
     margin-top: 20px;
@@ -85,17 +85,39 @@ img {
     justify-content: space-evenly;
 }
 
+#project{
+    background-color: #f4dcb99a;
+    border-radius: 10px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
 .projects {
-    display: grid;
+    display: flex;
     grid-gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
     align-items: center;
-    grid-area: wrap;
+    flex-wrap: wrap;
+}
+
+.projItem{
+    max-width: 33%;
 }
 
 .projItem :hover{
     transform: scale(1.5);
     overflow: hidden;
+}
+
+#about{
+    max-width: 95%;
+    margin: 0 auto;
+    background-color: rgba(242, 141, 168, 0.459);
+    border-radius: 10px;
 }
 
 .mePhoto {
@@ -107,7 +129,7 @@ img {
 .sectionTitle {
     color: #61acba;
     font-size: 50px;
-    background-color: #f4dcb99a;
+    /* background-color: #f4dcb99a; */
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     margin: 20px 0;
@@ -115,7 +137,7 @@ img {
 }
 
 .textAbout {
-    color: #5C013B;
+    color: #fff;
     font-size: 25px;
     /* background-color: #f4dcb98a; */
     text-align: center;
@@ -124,16 +146,15 @@ img {
 }
 
 .contact {
-    color: #5C013B;
+    color: #fff;
     font-size: 20px;
-    /* background-color: #f4dcb99a; */
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
+    
 }
 .contactMe{
     color: #fff;
     font-size: 25px;
-    /* background-color: #f4dcb99a; */
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -157,14 +178,15 @@ img {
 
 .sticky-header {
     color: #5C013B;
+    font-size: 45px;
     position: fixed;
     text-align: center;
     top: 0px;
     left: 0;
     width: 100%;
-    background-color: #61adbaa2;
+    /* background-color: #61adbaa2; */
     height: 45px;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .sticky-header .container {
@@ -176,12 +198,12 @@ img {
 .sticky-header__main-nav {
     flex: 1;
     align-items: center;
+
 }
 
 .sticky-header__main-nav li {
     display: inline-block;
     position: block;
-    /* background-color: #61acbaa2; */
     padding: 0 15px;
 }
 
@@ -220,7 +242,8 @@ img {
       }
       .sticky-header{
         display:none;
-      }
+    }
+
       .sticky-header .container {
         display: flex;
         align-items: center;
