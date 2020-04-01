@@ -109,7 +109,7 @@ img {
 }
 
 .projItem :hover{
-    transform: scale(1.5);
+    transform: scale(1.0) rotate(20deg);
     overflow: hidden;
 }
 
