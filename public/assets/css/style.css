@@ -81,6 +81,7 @@ img {
     margin-top: 50px;
 }
 
+
 .menu {
     color: #5C013B;
     font: lighter 20px/30px Tahoma, serif;
@@ -93,6 +94,10 @@ img {
     justify-content: space-evenly;
     margin-bottom: 50px;
 }
+span{
+    display: none;
+}
+
 
 #project{
     background-color: #f4dcb99a;
@@ -117,11 +122,11 @@ img {
 .projItem{
     max-width: 33%;
 }
-
+/* 
 .projItem :hover{
     transform: scale(1.0) rotate(20deg);
     overflow: hidden;
-}
+} */
 
 #about{
     max-width: 95%;
