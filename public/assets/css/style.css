@@ -10,8 +10,16 @@ body {
 .homePage{
     /* text-align: center; */
     display: grid;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
+
+.logo :hover{
+    background-image: url("/assets/images/cor3.jpg");
+    transform: rotate(270deg);
+    overflow: hidden;
+}
+
+
 
 .burguerMenu {
     position: absolute;
@@ -38,6 +46,8 @@ body {
     flex-direction: row;
     align-items: center;
     margin: 25px;
+    position: relative;
+    bottom:  0px;
 }
 
 .social a {
@@ -83,6 +93,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-bottom: 50px;
 }
 
 #project{
