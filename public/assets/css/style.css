@@ -100,13 +100,9 @@ span{
 
 #project{
     background-color: #f4dcb99a;
-    border-radius: 20px;
-    max-width: 95%;
-    margin: 25px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
 .projects {
@@ -115,17 +111,18 @@ span{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 35px;
     /* opacity: 0.6; */
 }
 
 .projItem{
     max-width: 33%;
 }
-/* 
+
 .projItem :hover{
-    transform: scale(1.0) rotate(20deg);
+    transform: scale(1.5);
     overflow: hidden;
-} */
+}
 
 #about{
     max-width: 95%;
