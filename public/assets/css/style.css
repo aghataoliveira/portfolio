@@ -14,9 +14,8 @@ body {
 }
 
 .logo :hover{
-    background-image: url("/assets/images/cor3.jpg");
-    transform: scale(0.7) rotate(270deg);
-    overflow: hidden;
+    /* background-image: url("/assets/images/cor3.jpg"); */
+    transform: scale(0.7);
 }
 
 .burguerMenu {
@@ -133,6 +132,8 @@ span{
     margin: 0 auto;
     background-color: rgba(242, 141, 168, 0.459);
     border-radius: 10px;
+    padding-top: 50px;
+    margin-top: 40px;
 }
 
 .mePhoto {
